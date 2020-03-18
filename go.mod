@@ -1,4 +1,4 @@
-module github.com/delley/saml-auth
+module github.com/lmalins/saml/
 
 go 1.12
 

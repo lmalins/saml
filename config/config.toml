@@ -1,0 +1,27 @@
+# Configuration file
+certPath         = "cert/saml-auth-proxy.cert"
+keyPath          = "cert/saml-auth-proxy.key"
+appContext       = "/CSL05"
+idpURL           = "https://drcimp.imrmconnect.cl/idp-latam-01.xml"
+rootURL          = "https://drcimp.imrmconnect.cl/CSL05/"
+appPort          = ":10001"
+
+[ldapCfg]
+ldapServer       = "brspomtbbpmq01.la.imtn.com:10389"
+ldapBind         = "123"
+ldapPassword     = "123"
+filterDN         = "(uid={0})"
+baseDN           = "ou=BS278,ou=BPMx,ou=customers,dc=bpmx2,dc=la,dc=imtn,dc=com"
+departmentNumber = "CN=BS278,OU=BPMx,OU=Customers,OU=AR,DC=la,DC=imtn,DC=com"
+groupsDN         = ["cn=BS278_ext,ou=groups,dc=gpabr,dc=com"]
+
+[amxDRC2Cfg]
+baseURL          = "http://cltaqmdrcp04:8010/"
+loginURL         = "https://drcimp.imrmconnect.cl/Autenticacion"
+containerID      = "251"
+ldapAlias        = "customers"
+drcUser          = "{$USER}"
+drcPwd           = "{$PASSWORD}"
+drcSigla         = "BR001"
+drcIp            = "1"
+groupsID         = ["_pnMQQGDnEeev-68nagaf8g"]

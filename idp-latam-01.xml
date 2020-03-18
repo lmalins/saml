@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" validUntil="2020-04-11T14:35:22Z" cacheDuration="PT604800S" entityID="https://ltmadm-test.2e-systems.com/saml2/metadata">
+  <md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIICZDCCAc2gAwIBAgIBADANBgkqhkiG9w0BAQ0FADBPMQswCQYDVQQGEwJkZTESMBAGA1UECAwJRnJhbmtmdXJ0MRMwEQYDVQQKDAoyZSBTeXN0ZW1zMRcwFQYDVQQDDA4yZS1zeXN0ZW1zLmNvbTAeFw0xOTA0MTIxNDM1MjJaFw0yMDA0MTExNDM1MjJaME8xCzAJBgNVBAYTAmRlMRIwEAYDVQQIDAlGcmFua2Z1cnQxEzARBgNVBAoMCjJlIFN5c3RlbXMxFzAVBgNVBAMMDjJlLXN5c3RlbXMuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDOgUi61Ya+Oge6HiEBfBQqcg6rMgW/YIF9U+BKkzo8xwSYticnRR662z1GQw8ksD+fgLkLZcxL4QapNI0mU/JUQcWaerTiI1nsHaEZK3rFciPySWQjymjH0WNI/33QFQV4R3EiKkvc+824Dc+hGywbiNz012vlb/o/FG0nTtK9jwIDAQABo1AwTjAdBgNVHQ4EFgQU1Xir0+JNnom+D/nSVImAj7VeItIwHwYDVR0jBBgwFoAU1Xir0+JNnom+D/nSVImAj7VeItIwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQ0FAAOBgQC09ycVWu8gJL7yzdfmj5C0k6z2fYIae460iv9RRb9Uj7FWwi4rbS/59KzUTVHRlnN4EYzRpdpJHId/tsukhEIIZZcYJV8SkRGlv4Tc0Uw0w6DI80pLvHldaCV90iyIFdIXCmP2g96GuFX3UpMzhkVIfAyuOTvxY+o7OOrqtlMpeQ==</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://ltmadm-test.2e-systems.com/saml2/sls" ResponseLocation="https://ltmadm-test.2e-systems.com/saml2/sls"/>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://ltmadm-test.2e-systems.com/saml2/acs" index="1"/>
+  </md:SPSSODescriptor>
+  <md:Organization>
+    <md:OrganizationName xml:lang="en-US">2e Systems</md:OrganizationName>
+    <md:OrganizationDisplayName xml:lang="en-US">2e Systems</md:OrganizationDisplayName>
+    <md:OrganizationURL xml:lang="en-US">https://www.2e-systems.com</md:OrganizationURL>
+  </md:Organization>
+  <md:ContactPerson contactType="technical">
+    <md:GivenName>Aleksandar Milkovic</md:GivenName>
+    <md:EmailAddress>aleksandar.milkovic@2e-systems.com</md:EmailAddress>
+  </md:ContactPerson>
+  <md:ContactPerson contactType="support">
+    <md:GivenName>Support</md:GivenName>
+    <md:EmailAddress>support@2e-systems.com</md:EmailAddress>
+  </md:ContactPerson>
+</md:EntityDescriptor>

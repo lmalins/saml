@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="/BSH14/ui/static/jquery.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            
+            // {"j_username":" dGliY28tYWRtaW4=", "j_password":"JFQzKDBAOHJAJEw=", "j_cookie":"LTE="}
+            
+            var sendInfo = {
+                tsLogin: '{{.Usr}}',                
+                tsClave: '{{.Pss}}',
+                tsSigla: 'csl05',
+                tsIP:    '1'
+            };
+
+            console.log(JSON.stringify(sendInfo));
+            
+            alert('page intercepted');
+            
+            $.ajax({
+                type: "post",
+                url: "http://dev.brspomdrc2q01.la.imtn.com/Autenticacion/Login/",
+                dataType: "json",
+				contentType: 'application/json',
+                success: function (xhr) {
+					window.location = 'http://dev.brspomdrc2q01.la.imtn.com/drc2/Home';
+                },
+                data: JSON.stringify(sendInfo)
+            });
+        });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor entityID="https://bpmx2.imbonline.com.br/BSH14/saml/metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
+   <md:SPSSODescriptor AuthnRequestsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:KeyDescriptor>
+         <ds:KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+            <ds:X509Data>
+                <ds:X509Certificate>MIIDHzCCAgegAwIBAgIJAKSzmrS8fjNqMA0GCSqGSIb3DQEBBQUAMCYxJDAiBgNVBAMMG2ltYi1hcHMtcHJkLTAxMS5sYS5pbXRuLmNvbTAeFw0xOTEwMTUxOTMyMThaFw0yMDEwMTQxOTMyMThaMCYxJDAiBgNVBAMMG2ltYi1hcHMtcHJkLTAxMS5sYS5pbXRuLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALqGAhfa0+2nTln3W8Hx8vD9/CboCQ8ANG8wmBXdO9S4j56S9AZOLcpdCnlcsMefMPn9q/ApDjs82UMUUh+i04KYP6giDEMge0LGxXpTpoRBfvfXLECJCIXGKuvVP2MrbMJ+cvA9IaVUdYjuHwu0enDEtBGg3sjRMrxzg1WvdpqKCUFPJ/yoW5ilEuIHKdU0Z7NSGARxVQ33ejP1+jRcaQi0M1dUdKSVJgyN/yeAGjr7U8zs0YZ6JeNqvHmdgl3afFAquk+YODqnkAjRgzXHd/4oyrnCmtPnw4LOuvzXqXfEU1junf03SsmmMsUmVCBQ8G2CnCuQRQCZMreY1cni5zUCAwEAAaNQME4wHQYDVR0OBBYEFNtIO/uT2oTCwv+cAXhjrV5sdzAOMB8GA1UdIwQYMBaAFNtIO/uT2oTCwv+cAXhjrV5sdzAOMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADggEBAB1DZywvbLB5nNaoKct3CkD7ck/Hsfc7Di8qCXm+gzoT6EGfvg+IxckfqRmunS6IE5LMKuBeEjxrLPEd1ZobSgz8RUKz25Cd7JLfJQXMb6nkXrskpUPEJtik6HdZWJfbsWKJax02hajmP+ZaS3vsm2C36536u6e2/hM399lDm04GPe8l9sWIixUT0/HfIc/C2aOMo4YpfyAUevaxMZ/YW/k5tR+rAS5W77aPchBPJGXFNhmpxOSb2mCKPh/3fzRSfNuv6gZSJTmEagOE3L4IOlYudbwbzgFUReJIJWDFzM4uBDFGZo6Hp6kpJ6HbydXT/MGUXTOGZpAAP7cNFk9PsBs=</ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://bpmx2.imbonline.com.br/BSH14/saml/acs" index="0"/>
+   </md:SPSSODescriptor>
+</md:EntityDescriptor>

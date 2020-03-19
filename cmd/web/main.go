@@ -6,9 +6,7 @@ import (
 	"os"
 
 	"github.com/BurntSushi/toml"
-
-	a "github.com/lmalins/saml/tree/master/pkg/models/amxapi"
-	l "github.com/lmalins/saml/tree/master/pkg/models/ldap"
+	l "github.com/lmalins/saml/pkg/models/ldap"
 	"gopkg.in/ldap.v3"
 )
 

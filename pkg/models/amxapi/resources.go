@@ -11,7 +11,7 @@ import (
 	"net/url"
 	"os"
 	"time"
-	"github.com/delley/saml-auth/pkg/models"
+	"github.com/lmalins/saml/pkg/models"
 )
 
 // ResourceModelAMX Define a ResourceModel type wich wraps a ldap.Conn connection.

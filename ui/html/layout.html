@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <script type="text/javascript" src="/BSH14/ui/static/jquery.min.js"></script>
+        <script type="text/javascript" src="/CSL05/ui/static/jquery.min.js"></script>
     </head>
     <body>
         <script type="text/javascript">
@@ -23,11 +23,11 @@
             
             $.ajax({
                 type: "post",
-                url: "http://dev.brspomdrc2q01.la.imtn.com/Autenticacion/Login/",
+                url: "https://drcimp.imrmconnect.cl/Autenticacion/Login/",
                 dataType: "json",
 				contentType: 'application/json',
                 success: function (xhr) {
-					window.location = 'http://dev.brspomdrc2q01.la.imtn.com/drc2/Home';
+					window.location = 'https://drcimp.imrmconnect.cl/drc2/Home';
                 },
                 data: JSON.stringify(sendInfo)
             });

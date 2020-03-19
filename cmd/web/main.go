@@ -7,8 +7,8 @@ import (
 
 	"github.com/BurntSushi/toml"
 
-	a "github.com/delley/saml-auth/pkg/models/amxapi"
-	l "github.com/delley/saml-auth/pkg/models/ldap"
+	a "github.com/lmalins/saml/tree/master/pkg/models/amxapi"
+	l "github.com/lmalins/saml/tree/master/pkg/models/ldap"
 	"gopkg.in/ldap.v3"
 )
 

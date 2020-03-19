@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 	"github.com/crewjam/saml/samlsp"
-	"github.com/delley/saml-auth/pkg/models"
-	"github.com/delley/saml-auth/pkg/stringutils"
+	"github.com/lmalins/saml/tree/master/pkg/modelsmodels"
+	"github.com/lmalins/saml/tree/master/pkg/stringutils"
 )
 
 func (app *application) hello(w http.ResponseWriter, r *http.Request) {
